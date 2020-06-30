@@ -1,0 +1,26 @@
+<div id="index-page" class="content-container" fxLayout="column">
+    <div class="top" fxLayout="column">
+        <h1 class="title">Covid-19 Statistics In Israel</h1>
+    </div>
+    <div class="cards-container" fxLayout="row">
+        <ngx-charts-number-card [results]="total$ | async" [cardColor]="cardColor">
+        </ngx-charts-number-card>
+    </div>
+    <div class="graphs" fxLayout="row">
+        <div class="line-chart-day" fxLayout="column">
+            <h3 class="title">Daily New Cases</h3>
+            <ngx-charts-line-chart [legend]="legend" [legendPosition]="'bottom'" [legendTitle]="''"
+                [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis"
+                [results]="daily$ | async">
+            </ngx-charts-line-chart>
+        </div>
+        <div class="spacer"></div>
+        <div class="line-chart-total" fxLayout="column">
+            <h3 class="title">Total Cases</h3>
+            <ngx-charts-line-chart [legend]="legend" [legendPosition]="'bottom'" [legendTitle]="''"
+                [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="xAxis"
+                [results]="totalDaily$ | async">
+            </ngx-charts-line-chart>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+#index-page {
+    padding: 10px;
+    .title {
+        text-align: center;
+        color: white;
+    }
+    .top {
+        background: #232837;
+        border-radius: 5px;
+    }
+    .cards-container {
+        margin-top: 10px;
+    }
+    .graphs {
+        height: 400px;
+        .spacer {
+            width: 4%;
+        }
+        .line-chart-day,
+        .line-chart-total {
+            width: 48%;
+        }
+    }
+    @media (max-width: 940px) {
+        .cards-container {
+            height: 250px;
+        }
+        .graphs {
+            flex-wrap: wrap;
+            height: unset;
+            .line-chart-day,
+            .line-chart-total {
+                width: 100%;
+                height: 635px;
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        .top {
+            .title {
+                font-size: 22px;
+            }
+        }
+        .cards-container {
+            height: 330px;
+        }
+        .graphs {
+            flex-wrap: wrap;
+            height: unset;
+            .spacer {
+                height: 140px;
+            }
+            .line-chart-day,
+            .line-chart-total {
+                width: 100%;
+                height: 40vh;
+            }
+        }
+    }
+}

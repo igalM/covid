@@ -1,0 +1,41 @@
+{
+  "name": "corona-server",
+  "version": "1.0.0",
+  "description": "Corona Statistics API",
+  "main": "app.ts",
+  "scripts": {
+    "start": "node ./build/app.js",
+    "start:watch": "npm run build:watch & nodemon ./build/app.js",
+    "build": "node_modules/.bin/tsc",
+    "build:watch": "npm run build -- -w"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.17",
+    "@types/compression": "^1.7.0",
+    "@types/node-cron": "^2.0.3",
+    "@types/puppeteer": "^2.0.1",
+    "@types/redis": "^2.8.18",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.11.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "multer": "^1.4.2",
+    "node-cron": "^2.0.3",
+    "puppeteer": "^2.0.0",
+    "redis": "^3.0.2",
+    "reflect-metadata": "^0.1.13",
+    "routing-controllers": "^0.8.1-alpha.2",
+    "typescript": "^3.8.3",
+    "typedi": "^0.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

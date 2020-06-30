@@ -1,0 +1,29 @@
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background: #1b1e27;
+    margin: 0;
+}
+
+.ngx-charts {
+    text {
+        fill: #a0aabe;
+    }
+}
+.chart-legend {
+    .legend-labels {
+        background: #232837 !important;
+    }
+}
+
+@media (max-width:500px) {
+    ngx-charts-number-card .cell .trimmed-label p {
+        font-size: 12px !important;
+        line-height: 12px !important;
+    }
+}
